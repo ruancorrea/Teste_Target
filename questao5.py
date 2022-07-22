@@ -6,18 +6,20 @@ a) Essa string pode ser informada através de qualquer entrada de sua preferênc
 b) Evite usar funções prontas, como, por exemplo, reverse;
 """
 
-def string_reverse(string):
-    stringReverse = ""
+# questão 5
+
+def string_invertida(string):
+    stringInvertida = ""
     i = len(string)-1
     while i > -1:
-        stringReverse += string[i]
+        stringInvertida += string[i]
         i -= 1
-  
-    return stringReverse 
+    
+    return stringInvertida 
 
 
 #string = "Ruan Heleno Correa da Silva"
-string = input("Que string deseja tornar reversa? ")
-stringReverse = string_reverse(string)
+string = input("Que string deseja inverter? ")
+stringInvertida = string_invertida(string)
 print(f"String inicial: {string}")
-print(f"String reversa: {stringReverse}")
+print(f"String invertida: {stringInvertida}")
